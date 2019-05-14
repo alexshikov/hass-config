@@ -1,0 +1,14 @@
+automation:
+  # ---------------------
+  # Restart
+  # ---------------------
+  - id: hassio_startup
+    alias: Hassio Startup
+    hide_entity: true
+    trigger:
+      platform: homeassistant
+      event: start
+    action:
+    - service: notify.telegram
+      data:
+        message: Hassio Started.

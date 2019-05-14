@@ -1,0 +1,14 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: metric
+  time_zone: !secret home_timezone
+  
+  packages: !include_dir_named packages
+
+default_config:
+
+lovelace:
+  mode: yaml

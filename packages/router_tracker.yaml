@@ -1,0 +1,20 @@
+# ------------
+# Router
+# ------------
+asuswrt:
+  host: !secret router_ip
+  protocol: telnet
+  port: 23
+  username: !secret router_user
+  password: !secret router_pass
+
+# ------------
+# Tracker
+# ------------
+device_tracker:
+  - platform: asuswrt
+    interval_seconds: 30
+    consider_home: 180
+    new_device_defaults:
+      track_new_devices: false
+      hide_if_away: true

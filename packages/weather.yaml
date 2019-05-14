@@ -1,0 +1,9 @@
+homeassistant:
+  customize:
+    sensor.yr_symbol:
+      friendly_name: Weather
+
+sensor:
+  - platform: yr
+
+sun:

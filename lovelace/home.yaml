@@ -1,0 +1,27 @@
+path: default_view
+title: Home
+icon: mdi:home
+badges:
+  - person.alex
+  - person.tanya
+  - person.mama_lena
+  - sensor.yr_symbol
+  - sun.sun
+cards:
+  - type: entities
+    title: Zigbee
+    show_header_toggle: false
+    entities:
+      - entity: input_boolean.zigbee_permit_join
+      - entity: timer.zigbee_permit_join
+      - entity: sensor.bridge_state
+  - type: entities
+    title: Xiaomi Leak Detector
+    show_header_toggle: false
+    entities:
+      - entity: binary_sensor.xiaomi_leak_detector_water_leak
+        name: State
+      - entity: sensor.xiaomi_leak_detector_battery
+        name: Battery
+      - entity: sensor.xiaomi_leak_detector_linkquality
+        name: Link Quality

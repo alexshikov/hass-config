@@ -1,0 +1,15 @@
+automation:
+  # ---------------------
+  # Water Leak
+  # ---------------------
+  - id: notify_when_water_leak_detected
+    alias: Notify when water leak detected
+    hide_entity: true
+    trigger:
+      platform: state
+      entity_id: binary_sensor.xiaomi_leak_detector_water_leak
+      to: 'on'
+    action:
+    - service: notify.telegram
+      data:
+        message: Water Leak Detected!
