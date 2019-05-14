@@ -10,6 +10,6 @@ automation:
       entity_id: binary_sensor.xiaomi_leak_detector_water_leak
       to: 'on'
     action:
-    - service: notify.telegram
+    - service: notify.telegram_alex
       data:
         message: Water Leak Detected!

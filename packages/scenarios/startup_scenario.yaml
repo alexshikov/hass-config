@@ -9,6 +9,6 @@ automation:
       platform: homeassistant
       event: start
     action:
-    - service: notify.telegram
+    - service: notify.telegram_alex
       data:
-        message: Hassio Started.
+        message: Home Assistant started.
