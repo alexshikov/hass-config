@@ -14,3 +14,11 @@ person:
     id: mama_lena
     device_trackers:
       - device_tracker.mama_lena_android
+
+group:
+  family:
+    name: Family
+    entities:
+      - person.alex
+      - person.tanya
+      - person.mama_lena

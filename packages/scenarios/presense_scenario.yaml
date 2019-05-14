@@ -1,0 +1,24 @@
+automation:
+  - id: notify_when_somebody_present
+    alias: Somebody arrived to the Home
+    hide_entity: true
+    trigger:
+      platform: state
+      entity_id: group.family
+      to: 'on'
+    action:
+    - service: notify.telegram_alex
+      data:
+        message: Somebody arrived to the home.
+
+  - id: notify_when_everybody_left
+    alias: Everybody left the Home
+    hide_entity: true
+    trigger:
+      platform: state
+      entity_id: group.family
+      to: 'off'
+    action:
+    - service: notify.telegram_alex
+      data:
+        message: Everybody left the home.
