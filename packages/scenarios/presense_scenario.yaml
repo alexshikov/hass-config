@@ -5,7 +5,7 @@ automation:
     trigger:
       platform: state
       entity_id: group.family
-      to: 'on'
+      to: 'home'
     action:
     - service: notify.telegram_alex
       data:
@@ -17,7 +17,7 @@ automation:
     trigger:
       platform: state
       entity_id: group.family
-      to: 'off'
+      to: 'not_home'
     action:
     - service: notify.telegram_alex
       data:
