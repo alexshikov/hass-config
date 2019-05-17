@@ -2,3 +2,5 @@ title: Home
 # background: center / cover no-repeat url("/local/background2.jpeg") fixed
 views:
   - !include lovelace/home.yaml
+  - !include lovelace/weather.yaml
+  - !include lovelace/discover.yaml

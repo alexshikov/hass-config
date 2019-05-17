@@ -8,13 +8,8 @@ badges:
   - sensor.yr_symbol
   - sun.sun
 cards:
-  - type: entities
-    title: Zigbee
-    show_header_toggle: false
-    entities:
-      - entity: input_boolean.zigbee_permit_join
-      - entity: timer.zigbee_permit_join
-      - entity: sensor.bridge_state
+  - type: weather-forecast
+    entity: weather.dark_sky
   - type: entities
     title: Xiaomi Leak Detector
     show_header_toggle: false

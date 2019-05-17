@@ -43,7 +43,7 @@ frontend:
       secondary-background-color: 'var(--background-color-2)'                         # Background more info title
 
       # Icons
-      paper-item-icon-color: 'var(--text-dark-color)'                                 # Off
+      paper-item-icon-color: 'var(--accent-medium-color)'                             # Off
       paper-item-icon-active-color: 'var(--accent-color)'                             # On
       
       # Switches

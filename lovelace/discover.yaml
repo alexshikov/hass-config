@@ -1,0 +1,10 @@
+title: Discover
+icon: mdi:access-point
+cards:
+  - type: entities
+    title: Zigbee
+    show_header_toggle: false
+    entities:
+      - entity: input_boolean.zigbee_permit_join
+      - entity: timer.zigbee_permit_join
+      - entity: sensor.bridge_state
