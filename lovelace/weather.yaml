@@ -1,6 +1,7 @@
 title: Weather
+icon: mdi:weather-partlycloudy
 cards:
-  #- type: custom:compact-custom-header
+  - type: custom:compact-custom-header
   - type: weather-forecast
     entity: weather.dark_sky
   - type: entities

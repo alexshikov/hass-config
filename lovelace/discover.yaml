@@ -1,6 +1,7 @@
 title: Discover
 icon: mdi:access-point
 cards:
+  - type: custom:compact-custom-header
   - type: entities
     title: Zigbee
     show_header_toggle: false
@@ -8,3 +9,4 @@ cards:
       - entity: input_boolean.zigbee_permit_join
       - entity: timer.zigbee_permit_join
       - entity: sensor.bridge_state
+  - type: custom:tracker-card

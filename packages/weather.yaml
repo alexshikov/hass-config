@@ -3,7 +3,7 @@ homeassistant:
     sensor.yr_symbol:
       friendly_name: Weather
     weather.dark_sky:
-      friendly_name: Weather Forecast
+      friendly_name: Dark Sky Forecast
 
 sun:
 

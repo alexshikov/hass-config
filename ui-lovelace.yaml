@@ -1,4 +1,11 @@
 title: Home
+
+resources:
+  - url: /customcards/github/maykar/compact-custom-header.js?track=true
+    type: module
+  - url: /customcards/github/custom-cards/tracker-card.js?track=true
+    type: module
+
 # background: center / cover no-repeat url("/local/background2.jpeg") fixed
 views:
   - !include lovelace/home.yaml
