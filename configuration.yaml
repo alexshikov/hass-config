@@ -12,3 +12,8 @@ default_config:
 
 lovelace:
   mode: yaml
+
+custom_updater:
+  track:
+    - components
+    - cards
