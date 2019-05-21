@@ -10,6 +10,7 @@ sun:
 weather:
   - platform: darksky
     api_key: !secret darksky
+    mode: daily
 
 sensor:
   - platform: yr
