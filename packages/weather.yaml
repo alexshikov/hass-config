@@ -17,7 +17,6 @@ sensor:
 
   - platform: darksky
     api_key: !secret darksky
-    mode: daily
     forecast:
       - 0
       - 1
