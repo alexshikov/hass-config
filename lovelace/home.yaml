@@ -8,7 +8,6 @@ badges:
   - sensor.yr_symbol
   - sun.sun
 cards:
-  - type: custom:compact-custom-header
   - type: weather-forecast
     entity: weather.dark_sky
   - type: entities

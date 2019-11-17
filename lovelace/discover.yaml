@@ -1,7 +1,6 @@
 title: Discover
 icon: mdi:access-point
 cards:
-  - type: custom:compact-custom-header
   - type: entities
     title: Zigbee
     show_header_toggle: false

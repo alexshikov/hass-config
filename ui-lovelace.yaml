@@ -6,6 +6,10 @@ resources:
   - url: /customcards/github/custom-cards/tracker-card.js?track=true
     type: module
 
+# Compact Custom Header
+cch:
+  options: show
+
 # background: center / cover no-repeat url("/local/background2.jpeg") fixed
 views:
   - !include lovelace/home.yaml
