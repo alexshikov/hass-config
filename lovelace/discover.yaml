@@ -8,4 +8,4 @@ cards:
       - entity: input_boolean.zigbee_permit_join
       - entity: timer.zigbee_permit_join
       - entity: sensor.bridge_state
-  - type: custom:tracker-card
+  #- type: custom:tracker-card

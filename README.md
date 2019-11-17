@@ -18,6 +18,13 @@
 3. Don't add `mqtt` component to Home Assistant `configuration.yaml`
 
 
+### HACS
+
+NOTE: It's updated from [Custom Updater](https://github.com/custom-components/custom_updater) to [HACS](https://hacs.xyz).
+
+Installation followed by https://hacs.xyz/docs/installation/manual
+
+
 ## Usage
 
 This section is mostly for myself to remember how to make changes, because after a few months of development idle I really get dumb and forget how to update the configuration.
