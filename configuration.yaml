@@ -8,6 +8,9 @@ homeassistant:
   
   packages: !include_dir_named packages
 
+frontend:
+  themes: !include_dir_merge_named themes
+
 default_config:
 
 lovelace:
