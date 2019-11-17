@@ -2,14 +2,25 @@ automation:
   # ---------------------
   # Water Leak
   # ---------------------
-  - id: notify_when_water_leak_detected
-    alias: Notify when water leak detected
+  - id: notify_when_water_leak_detected_bathroom
+    alias: Notify when water leak detected in the Bathroom
     hide_entity: true
     trigger:
       platform: state
-      entity_id: binary_sensor.xiaomi_leak_detector_water_leak
+      entity_id: binary_sensor.leak_detector_bathroom_water_leak
       to: 'on'
     action:
     - service: notify.telegram_alex
       data:
-        message: Water Leak Detected!
+        message: Water weak detected in the Bathroom!
+  - id: notify_when_water_leak_detected_kitchen
+    alias: Notify when water leak detected in the Kitchen
+    hide_entity: true
+    trigger:
+      platform: state
+      entity_id: binary_sensor.leak_detector_kitchen_water_leak
+      to: 'on'
+    action:
+    - service: notify.telegram_alex
+      data:
+        message: Water weak detected in the Kitchen!

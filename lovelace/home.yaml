@@ -11,12 +11,36 @@ cards:
   - type: weather-forecast
     entity: weather.dark_sky
   - type: entities
-    title: Xiaomi Leak Detector
+    title: Temp Sensor (Living Room)
     show_header_toggle: false
     entities:
-      - entity: binary_sensor.xiaomi_leak_detector_water_leak
-        name: State
-      - entity: sensor.xiaomi_leak_detector_battery
+      - entity: sensor.temp_sensor_livingroom_temperature
+        name: Temperature
+      - entity: sensor.temp_sensor_livingroom_humidity
+        name: Humidity
+      - entity: sensor.temp_sensor_livingroom_pressure
+        name: Pressure
+      - entity: sensor.temp_sensor_livingroom_battery
         name: Battery
-      - entity: sensor.xiaomi_leak_detector_linkquality
+      - entity: sensor.temp_sensor_livingroom_linkquality
+        name: Link Quality
+  - type: entities
+    title: Leak Detector (Bathroom)
+    show_header_toggle: false
+    entities:
+      - entity: binary_sensor.leak_detector_bathroom_water_leak
+        name: State
+      - entity: sensor.leak_detector_bathroom_battery
+        name: Battery
+      - entity: sensor.leak_detector_bathroom_linkquality
+        name: Link Quality
+  - type: entities
+    title: Leak Detector (Kitchen)
+    show_header_toggle: false
+    entities:
+      - entity: binary_sensor.leak_detector_kitchen_water_leak
+        name: State
+      - entity: sensor.leak_detector_kitchen_battery
+        name: Battery
+      - entity: sensor.leak_detector_kitchen_linkquality
         name: Link Quality
