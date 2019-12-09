@@ -1,14 +1,33 @@
 # Zigbee 2 MQTT stick
 sensor:
+  # Sensor for monitoring the bridge state
   - platform: mqtt
     name: Bridge state
     state_topic: "zigbee2mqtt/bridge/state"
     icon: mdi:router-wireless
+  # Sensor for Showing the Zigbee2mqtt Version
+  - platform: mqtt
+    name: Zigbee2mqtt Version
+    state_topic: "zigbee2mqtt/bridge/config"
+    value_template: "{{ value_json.version }}"
+    icon: mdi:zigbee
+  # Sensor for Showing the Coordinator Version
+  - platform: mqtt
+    name: Coordinator Version
+    state_topic: "zigbee2mqtt/bridge/config"
+    value_template: "{{ value_json.coordinator }}"
+    icon: mdi:chip
 
 # MQTT broker
 mqtt:
   broker: homeassistant
   discovery: true
+  birth_message:
+    topic: 'hass/status'
+    payload: 'online'
+  will_message:
+    topic: 'hass/status'
+    payload: 'offline'
 
 # Joining flags
 input_boolean:
@@ -21,7 +40,7 @@ input_boolean:
 timer:
   zigbee_permit_join:
     name: Time remaining
-    duration: 600 # Updated this to the number of seconds you wish
+    duration: 120 # Updated this to the number of seconds you wish
 
 # --------------
 # An automation to enable Joining for limited amount of time
